@@ -1,0 +1,84 @@
+:root {
+    --background-color: #e2e8f0;
+    --accent-color: #69bbe7;
+    --secondary-color: #ffffff;
+    --interact-blue-color:  #2884b6;
+    --interact-card-color:#e9e0c5;
+}
+
+html,
+body,
+html * {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-rows: 5rem 1fr;
+    grid-template-columns: 1fr;
+}
+.banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem;
+    background-color: var(--accent-color);
+}
+h1{
+    flex: 5;
+    justify-self: start;
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+    align-items: center;
+
+}
+.banner div{
+    flex: 1;
+    justify-self: end;
+}
+.add{
+    height: 3rem;
+    width: 10rem;
+    background-color: var(--interact-blue-color);
+    border-style: none;
+    border-radius: 10px;
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.icon{
+    height: 3rem;
+    justify-content: center;
+}
+.main-containter{
+    background-color: var(--background-color);
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-rows: repeat(auto-fit, 15rem);
+    gap: 5rem;
+    padding: 2rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem;
+    gap: 2rem;
+    background-color: #FFFAFB;
+    min-height: 15rem;
+    max-width: 15rem;
+    border-radius: 10px;
+    box-shadow: 0px 2px 12px rgb(197, 197, 197);
+    justify-content: center;
+}
+
+.card > *{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
