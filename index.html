@@ -11,19 +11,31 @@
 </head>
 <body>
     <div class="banner">
-        <h1><img src="book-open-variant.svg" class="icon">Bookstore</h1>
+        <h1><img src="res/book-open-variant.svg" class="icon">Bookstore</h1>
         <div>
             <button class="add">Add a book</button>
         </div>
         
     </div>
-    <div class="main-containter">
-        <div class="card">
-            <p class="title">test</p>
-            <p class="author">test</p>
-            <p class="numPage">3</p>
-            <button class="read">read</button>
-        </div>
+    <div class="popup-form">
+        <form class="popup" method="dialog">
+            <h3>New book</h3>
+            <input type="text" id="title" placeholder="Title" required>
+            <input type="text" id="author" name="author" placeholder="Author" required>
+            <input type="text" id="page" name="page" placeholder="Page Read" required>
+            <div>
+                <label for="checkbox-has-read">I have read this book</label>
+                <input type="checkbox" name="has-read" id="checkbox-has-read" class="checkbox"/>
+            </div>
+            <div>
+                <button class="medium-bold font-size-regular" type="submit" id="submit-btn">Add book</button>
+                <button class="faded font-size-regular js-delete-btn" type="button">Cancel</button>
+            </div>
+        </form>
     </div>
+
+    <div class="main-containter">
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
